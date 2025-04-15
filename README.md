@@ -27,9 +27,15 @@ npm install
 3. Create a `.env` file in the root directory with the following variables:
 ```
 PORT=your_port
-MONGODB_URI=your_mongodb_uri
+MONGO_URI=your_mongodb_uri
 REDIS_URL=your_redis_url
 JWT_SECRET=your_jwt_secret
+```
+
+## Build and Run with Docker Compose
+
+```bash
+docker-compose up --build
 ```
 
 ## Project Structure
