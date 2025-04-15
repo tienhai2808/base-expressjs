@@ -6,7 +6,7 @@ const { connectRedis } = require("./config/redis.config");
 const authRoutes = require("./routes/auth.route");
 const userRoutes = require("./routes/user.route");
 const cookieParser = require("cookie-parser");
-dotenv.config();
+dotenv.config({ path: '.env.local' });
 
 const app = express();
 app.use(express.json());
