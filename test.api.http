@@ -1,0 +1,34 @@
+### SIGN UP
+POST http://localhost:5001/api/auth/signup
+Content-Type: application/json
+
+{
+  "email": "tester@gmail.com",
+  "username": "tester",
+  "firstName": "Tester",
+  "lastName": "NodeJS",
+  "password": "12345678"
+}
+
+### SIGN IN
+POST http://localhost:5001/api/auth/signin
+Content-Type: application/json
+
+{
+  "email": "tester@gmail.com",
+  "password": "12345678"
+}
+
+### GET ALL USERS
+GET http://localhost:5001/api/users
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2ZlOTRlZWQxMDE5OGY3OGQ3NDM4ZWEiLCJpYXQiOjE3NDQ3Mzc1MTgsImV4cCI6MTc0NTM0MjMxOH0.poOr27MDIhj9RQFCEU8VJzVaUg5adVbtPiDFvPn9tiw
+
+### UPDATE USER
+PATCH http://localhost:5001/api/users/67fe94eed10198f78d7438ea
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2ZlOTRlZWQxMDE5OGY3OGQ3NDM4ZWEiLCJpYXQiOjE3NDQ3Mzc1MTgsImV4cCI6MTc0NTM0MjMxOH0.poOr27MDIhj9RQFCEU8VJzVaUg5adVbtPiDFvPn9tiw
+Content-Type: application/json
+
+{
+  "firstName": "haha",
+  "lastName": "huhu"
+}
